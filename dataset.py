@@ -8,7 +8,7 @@ X = higher_education_students_performance_evaluation.data.features
 y = higher_education_students_performance_evaluation.data.targets 
   
 # metadata 
-print(higher_education_students_performance_evaluation.metadata) 
+#print(higher_education_students_performance_evaluation.metadata) 
   
 # variable information 
-print(higher_education_students_performance_evaluation.variables) 
+#print(higher_education_students_performance_evaluation.variables) 
