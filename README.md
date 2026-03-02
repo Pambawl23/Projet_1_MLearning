@@ -1,4 +1,3 @@
-```markdown
 # Higher Education Students Performance Evaluation
 
 Les données ont été recueillies auprès des étudiants de la Faculté d'ingénierie et de la Faculté des sciences de l'éducation en 2019. L'objectif est de prédire les performances des étudiants à la fin du semestre à l'aide de techniques d'apprentissage automatique.
