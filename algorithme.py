@@ -13,10 +13,10 @@ model.add(Dense(16, input_dim=31, activation='relu'))
 model.add(Dense(n_classes, activation='softmax'))
 model.compile(
     loss='sparse_categorical_crossentropy',
-    optimizer=Adam(learning_rate=0.001),
+    optimizer=Adam(learning_rate=0.01),  # 0.001 → 0.01
     metrics=['sparse_categorical_accuracy']
 )
-model.fit(donnees, reponses, epochs=100)
+model.fit(donnees, reponses, epochs=500)  # 100 → 500
 scores = model.evaluate(donnees, reponses)
 print("\n%s: %.2f%%" % (model.metrics_names[1], scores[1]*100))
 print(model.predict(donnees).argmax(axis=1).reshape(-1, 1))
