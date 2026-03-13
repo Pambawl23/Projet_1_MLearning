@@ -8,7 +8,6 @@ def train_model(epochs: int = 300):
     donnees = dt.X.to_numpy(dtype="float32")
     reponses, classes = dt.y.iloc[:, 0].factorize(sort=True)
     n_classes = len(classes)
-
     model = Sequential([
         Input(shape=(31,)),
         Dense(16, activation="relu"),
