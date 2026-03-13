@@ -11,4 +11,5 @@ y = higher_education_students_performance_evaluation.data.targets
 #print(higher_education_students_performance_evaluation.metadata) 
   
 # variable information 
+higher_education_students_performance_evaluation
 #print(higher_education_students_performance_evaluation.variables) 
