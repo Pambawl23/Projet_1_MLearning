@@ -7,7 +7,7 @@ higher_education_students_performance_evaluation = fetch_ucirepo(id=856)
 X = higher_education_students_performance_evaluation.data.features 
 y = higher_education_students_performance_evaluation.data.targets 
   
-# metadata 
+#metadata 
 #print(higher_education_students_performance_evaluation.metadata) 
   
 # variable information 
