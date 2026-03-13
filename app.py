@@ -75,14 +75,15 @@ with main:
     if st.session_state.page == "APERÇU":
         st.header("📊 Aperçu du Dataset")
 
-        col_a, col_b, col_c = st.columns(3)
-        with col_a:
-            st.metric("Nombre d'étudiants", df.shape[0])
-        with col_b:
-            st.metric("Nombre de variables explicatives", df.shape[1] - 1)
-        with col_c:
-            st.metric("Nombre de classes cibles", df[target_col].nunique())
-
+        with st.container(border=True):
+            col_a, col_b, col_c = st.columns(3)
+            with col_a:
+                st.metric("Nombre d'étudiants", df.shape[0])
+            with col_b:
+                st.metric("Nombre de variables explicatives", df.shape[1] - 1)
+            with col_c:
+                st.metric("Nombre de classes cibles", df[target_col].nunique())
+        
         st.subheader("Description du jeu de données")
         st.markdown(
             """
